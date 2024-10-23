@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thong tin</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            background-color: lavenderblush;
+        }
+        
+        .wrapper {
+            width: 789px;
+            height: 500px;
+            border: 1px black solid;
+            padding: 10px 20px 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Infor</h1>
+    <table width="auto" border="1">
+        <tr>
+            <th colspan="2">
+                THÔNG TIN ĐĂNG NHẬP
+            </th>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td id="us">AAAA</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Segoe UI';">Password</td>
+            <td id="pw">BBBB</td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td id="gen">DDDD</td>
+        </tr>
+        <tr>
+            <td>Cafe bạn chọn</td>
+            <td id="cf">CCCC</td>
+        </tr>
+    </table>
+</body>
+<script>
+    //lấy dữ liệu đã lưu get: lấy ra thongtin.html
+    var gt1, gt2;
+    gt1 = localStorage.getItem("us");
+    gt2 = localStorage.getItem("pd");
+    gt3 = localStorage.getItem("cf");
+    gt4 = localStorage.getItem("gt");
+
+    // Xuất vào id đã có
+    document.getElementById("us").innerHTML = gt1;
+    document.getElementById("pw").innerHTML = gt2;
+    document.getElementById("cf").innerHTML = gt3;
+    document.getElementById("gen").innerHTML = gt4;
+</script>
+
+</html>
